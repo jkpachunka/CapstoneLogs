@@ -1,0 +1,17 @@
+Engineering Log Entry
+-------------------------------------------------------
+NAME: Jon Pachunka
+TERM: Spring 2020
+PROJECT: Ankle Strength Analysis Platform (ASAP)
+-------------------------------------------------------
+DATE: 03/13/2020
+-------------------------------------------------------
+CIN: 	16:40
+COUT: 	
+HOURS: 	
+
+TITLE: Motor Driver Development
+
+NOTES:
+	
+-------------------------------------------------------
