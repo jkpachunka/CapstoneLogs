@@ -7,13 +7,27 @@ PROJECT: Ankle Strength Analysis Platform (ASAP)
 DATE: 03/12/2020
 -------------------------------------------------------
 CIN: 	17:45
-COUT: 	
+COUT: 	20:20
+HOURS: 	2.75
 
 TITLE: PCB Continuity Testing and PCB Motor Controller Firmware Development
 
 NOTES:
 	- Completed PCB continuity test for PCB revision 1
 	- Utilized DMM to validate all trace connections on the board
-	- 
-
+	- Attenpting to implement motor controller firmware for variable speed
+	- Associated Link: https://controllerstech.com/pwm-in-stm32/
+	- Began working on motor control drivers for the ASAP ankle actuator
+		- Directory: D:\CapstoneExperimental
+		- Able to outline the skeleton of functions that will be needed
+		  in order to configure and control the motor.
+		- Functions including homing, zero, init, speed, etc.
+	- MCU configurations:
+		- TIMER3 -> CHANNEL2 -> PWM GENERATION
+		- Prescaler 84, Counter 100, Pulse 50
+		- Allows for a 50% duty cycle at 10kHz
+	- Research Areas:
+		- Counting the number of pulses produced by the PWN signal
+		- Determining motor positioning without a direct feedback loop
+		- Determining absolutely necessary variables for the motor control drivers
 -------------------------------------------------------
