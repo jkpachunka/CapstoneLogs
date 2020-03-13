@@ -1,0 +1,19 @@
+Engineering Log Entry
+-------------------------------------------------------
+NAME: Jon Pachunka
+TERM: Spring 2020
+PROJECT: Ankle Strength Analysis Platform (ASAP)
+-------------------------------------------------------
+DATE: 03/12/2020
+-------------------------------------------------------
+CIN: 	17:45
+COUT: 	
+
+TITLE: PCB Continuity Testing and PCB Motor Controller Firmware Development
+
+NOTES:
+	- Completed PCB continuity test for PCB revision 1
+	- Utilized DMM to validate all trace connections on the board
+	- 
+
+-------------------------------------------------------
