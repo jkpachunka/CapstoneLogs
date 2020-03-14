@@ -7,11 +7,31 @@ PROJECT: Ankle Strength Analysis Platform (ASAP)
 DATE: 03/13/2020
 -------------------------------------------------------
 CIN: 	16:40
-COUT: 	
-HOURS: 	
+COUT: 	19:25
+HOURS: 	2:45
 
 TITLE: Motor Driver Development
 
 NOTES:
+	- Plan of Action:
+		- Develoop Motor Initialization software that will allo the alteration of speed
+		- Cleaned up git repository on local machine
+		- Created ASAP Drivers folder for storing new motor control drivers along with other drivers
+		- Identify how to maintain count of the motor control PWM signal
+		- Worked on a prototype motor speed control function that is actuated by a button
+		- Spent most of the session debugging build errors but was able to build after a few mistakes were fixed
+		- Unable to get the LED to toggle properly with the current PWM implementation
+		- Potential issues in the PIN configuration wizard will be explored tomorrow morning (03/14/2020)
+		- Plan to halt development of other motor driver functions until the PWM signal is generated properly from
+		  the MCU
+		- Further motor testing will be complete at STC during prototyping session on 03/14/2020
 	
+Example Function:
+	if (!(HAL_GPIO_ReadPin (GPIOC, GPIO_PIN_13)))   // if the user button is pressed
+	{ 
+		while (!(HAL_GPIO_ReadPin (GPIOC, GPIO_PIN_13)));  // wait for the button to be released 
+		htim3.Instance->CCR1 = increment;   // increase the pulse width in the steps of 10 
+		increment+=10;  // increment in 10 steps or by 10% for the duty cycle 
+		if (increment>100) increment =0;   // if increment is > 100 than reset its value to 0
+	}
 -------------------------------------------------------
