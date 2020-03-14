@@ -1,0 +1,31 @@
+Engineering Log Entry
+-------------------------------------------------------
+NAME: Jon Pachunka
+TERM: Spring 2020
+PROJECT: Ankle Strength Analysis Platform (ASAP)
+-------------------------------------------------------
+DATE: 03/14/2020
+-------------------------------------------------------
+CIN: 	12:45
+COUT: 	16:46
+HOURS: 	
+
+TITLE: Motor Driver Development Continued
+
+NOTES:
+	- Motor control development work time to complete the variable control portion of the motor driver software
+	- Should be able to control the speed of the blinking LED that will simulate the pulses sent to the motor controller
+	- Reviewed PLL's for clock multiplication
+	- Determinges that the current board will not require an external crystal to function at the full
+	  84 MHz operating frequency.
+	- Able to get the standard PWM signal to work properly
+	- Got the PWM signal advancing the motor properly
+	- Able to adjust the PWM signal using the CubeMX configuration tool
+	- Configured different step modes
+	- Determined that the 4 - 800 - ON - OFF - OFF configuration to have the best speed to power
+	  ratio for the use of the ASAP device
+	- Able to increase the overall output frequency to 10 kHz at the highest step count setting
+	- 5 kHz was found to be the optimal top speed for the ideal speed to power configuration of the
+	  motor driver
+	- 
+-------------------------------------------------------
