@@ -7,7 +7,7 @@ PROJECT: Ankle Strength Analysis Platform (ASAP)
 DATE: 03/15/2020
 -------------------------------------------------------
 CIN: 	11:30
-COUT: 	
+COUT: 	14:39
 HOURS: 	
 
 TITLE: Motor Driver Development Continued
@@ -19,5 +19,12 @@ NOTES:
 		https://stackoverflow.com/questions/43483762/using-stm32-hal-timer-and-adjusting-the-duty-cycle-of-a-pwm-signal
 	- Potential solution for dynamically adjusting the frequency of the PWM signal:
 		https://electronics.stackexchange.com/questions/312926/dinamically-change-pwm-frequency-with-interrupt-with-stm32
-	- 
+	- Forum post contraining the two variables required to adjust the period and duty cycle:
+		https://community.st.com/s/question/0D50X00009XkWYwSAN/stm32-pwm-with-variable-frequency
+	- When creating a new instance of a PWM channel it is necessary to initialize it on your own:
+		HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+	- Further prototyping will be required to determine the proper implementation of adjusting the frequency variable:
+		- Snipping from code:
+			// Modifies Channel 2 Frequency.
+			timer.Instance->ARR = increment;
 -------------------------------------------------------
