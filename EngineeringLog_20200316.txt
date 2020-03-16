@@ -7,7 +7,7 @@ PROJECT: Ankle Strength Analysis Platform (ASAP)
 DATE: 03/15/2020
 -------------------------------------------------------
 CIN: 	13:00
-COUT: 	
+COUT: 	14:30
 HOURS: 	
 
 TITLE: Motor Driver Development Continued
