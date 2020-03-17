@@ -1,0 +1,57 @@
+Engineering Log Entry
+-------------------------------------------------------
+NAME: Jon Pachunka
+TERM: Spring 2020
+PROJECT: Ankle Strength Analysis Platform (ASAP)
+-------------------------------------------------------
+DATE: 03/17/2020
+-------------------------------------------------------
+CIN: 	11:30
+COUT: 	13:30
+HOURS: 	
+
+TITLE: Group Call for Mechanical Design
+
+NOTES:
+	- Rotary Encoder Component Order Followup
+		- Called Samtec Directly
+		- Found that the encoder connector will not be shipping until March 31st from their facility in Costa Rica
+		- Attempted to get the order shipment pushed up from the current specified date but they stated they were
+		  working at capacity and would be unable to push the date up
+	- Mechanical Design Call
+		- GROUP MEMEBERS PRESENT: Antony Habib, Jarod Nekl
+		- Discussed the overall state of the heel cup Design
+		- Discussed potential solutions for the rail system on the device
+		- Expressed concerns on the components order and in particular the rotary encoder connector
+		- Determined that I will go to the BRB after the call to attempt to determine the status of the components order with all
+		  the closures due to the outbreak of the COVID-19 (Corona Virus)
+		- Work meeting scheduled after the WAM on 03/18
+		- PCB will be reworked to include a Quadrature input connection for potentially using a different rotary encoder in the case
+		  that the desired connector dosn't arrive in time for our demonstration
+		- Also will include GPIO inputs for motor homing circuitry in the case that a failure occurs with the actuation
+		- 
+-------------------------------------------------------
+CIN: 	14:00
+COUT: 	16:40
+HOURS: 	
+
+TITLE: Components order check in at the BRB
+
+NOTES:
+	- Came in to speak directly with Travis about the components order status after failed email attempts
+	- Travis was not in so spoke with Russ instead
+	- The current state of the components order is unknown since Russ doesn;t have access to the order system
+	- Attempted to meet with the Building Manager Jeff Kaipust who is in charge of all orders for the BRB
+		- Jeff was not in his office
+		- An email was sent in order to determine the status and possible delays due to the campus closures
+	- Contacted the team to get in touch with Dr. Knarr about checking component order status
+	- Manager to locate some thin gauge wire that will likely work for the needs of the rotary encoder connector if we must
+	  go with the crimp connestor option.
+	- Currently the members of the BRB are on a caome in late leave early due to the Corona Virus
+	- Able to complete the remaining functions for the motor controller that are not dependant on other device firmware
+	- Pushed changes up to github
+	- Aquired rotary encoder connector wire that will be thin enough for encoder development
+	- Plan on developing new PCB design with motor control feedback and the GPIO buttons for simplified UI on device.
+	- Will attempt to leave parts in the same position to allow the same stencil to be used for assembly
+
+-------------------------------------------------------
