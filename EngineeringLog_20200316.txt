@@ -4,7 +4,7 @@ NAME: Jon Pachunka
 TERM: Spring 2020
 PROJECT: Ankle Strength Analysis Platform (ASAP)
 -------------------------------------------------------
-DATE: 03/15/2020
+DATE: 03/16/2020
 -------------------------------------------------------
 CIN: 	13:00
 COUT: 	14:30
@@ -43,5 +43,33 @@ NOTES:
 	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 	return status;
 }
+-------------------------------------------------------
+CIN: 	15:15
+COUT: 	19:30
+HOURS: 	
 
+TITLE: Motor Driver Development Continued
+
+NOTES:
+	- Team members present: Antony Habib
+	- Location: Biomechanics Research Building (BRB)
+	- Attempt to do a live implementation of the variable motor control system
+	- Utilizing the power supply from the Biomechanics Research Building to supply power to the device
+	- Able to successfullly implement the motor controller in the fixed frequency configuration as done before
+	- Now firmware will be updated to allow for the variation of the PWM frequency
+	- Initial implementation of the tes_control function which changes the speed of the motor based on button clicks
+	- Prescaler set to 84
+	- Set the ARR to 100 for 10 kHz
+	- Set the ARR to 200 for 5 kHz
+	- Set the ARR to 1000 for 1 kHz
+	- Set the ARR to 10000 for 100 Hz
+	- Able to successfully adjust the speed of the motor manually using directly written values
+	- In order to reduce processing time a lookup table will be used with known values when controlling the overall speed of the motor
+	- Able tp successfully vary the speed of the of the motor by adjusting the counter and pulse values for the motor
+	- Original Equation: fout = (fin / Presacaler) / Counter
+		- Lookup table equation derivation:
+	 		- fout * Prescaler / fin = Counter
+	- Calculation for generatiing the counter and pulse values
+		- ARR = (fout * Prescaler) / fin
+		- ARR = ((fin/Pre) / fout)
 -------------------------------------------------------
